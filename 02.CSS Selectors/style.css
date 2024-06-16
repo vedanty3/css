@@ -40,8 +40,17 @@ li {
   background-color: coral;
 }
 
-[introduction] {
+/* [introduction] {
   background-color: rgb(245, 82, 114);
+} */
+
+p {
+  background-color: rgb(245, 82, 114);
+}
+
+/* combinator selector */
+ul p {
+  background-color: rgb(74, 11, 221);
 }
 
 [introduction="webt"] {
