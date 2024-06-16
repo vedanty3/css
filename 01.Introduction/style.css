@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: italic;
+}
+
+h4 {
+  color: rgb(0, 0, 0);
+  /* text-decoration: underline; */
+  text-decoration: underline wavy;
+  text-align: center;
+}
+
+p {
+  font-weight: 500;
+  font-size: 17px;
+  color: rgb(236, 41, 73);
+}
