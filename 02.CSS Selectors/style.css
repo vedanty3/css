@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+#heading {
+  color: rgb(210, 236, 184);
+  cursor: pointer;
+}
+
+#sub-heading {
+  color: rgb(210, 236, 184);
+}
+
+.html {
+  color: red;
+}
+
+.css {
+  color: blue;
+}
+
+.js {
+  color: rgb(211, 211, 17);
+}
+
+.react {
+  color: rgb(12, 133, 203);
+}
+
+.tw {
+  color: hwb(180 4% 24%);
+}
+
+li {
+  font-weight: 800;
+}
+
+/* attribute selector */
+[id] {
+  background-color: coral;
+}
+
+[introduction] {
+  background-color: rgb(245, 82, 114);
+}
+
+[introduction="webt"] {
+  background-color: rgb(235, 39, 235);
+}
+
+/* pseudo selector */
+#heading:hover {
+  color: rgb(133, 7, 167);
+}
