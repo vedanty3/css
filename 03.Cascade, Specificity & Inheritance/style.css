@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+/* cascade: whatever comes after will have more effect, browser decides which set of rules to follow */
+/* id(#) > (attribute([]) = class(.))> element  */
+
+#heading {
+  color: crimson;
+  color: inherit;
+}
+
+/* cascading will be followed */
+[heading] {
+  color: saddlebrown;
+}
+
+.heading {
+  color: deeppink;
+}
+/* ------------------------------------------------------------------- */
+
+h2 {
+  color: red;
+}
+
+h2 {
+  color: chartreuse;
+}
+
+h2 {
+  color: coral;
+}
+
+/* inheritance */
+/* body {
+  color: green;
+} */
+
+/* body {
+  font-size: 20px;
+} */
+
+/* body {
+  font-weight: 900;
+} */
+
+body {
+  font-family: monospace;
+  font-style: italic;
+  color: darkmagenta;
+}
