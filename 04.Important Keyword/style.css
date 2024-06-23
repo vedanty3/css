@@ -1,0 +1,33 @@
+h1 {
+  color: blue !important;
+}
+
+h1 {
+  color: salmon !important;
+}
+
+.heading {
+  color: brown;
+}
+
+#heading {
+  color: green;
+}
+
+h2 {
+  color: blue !important;
+}
+
+h2 {
+  color: salmon !important;
+}
+
+.sub-heading {
+  color: brown;
+}
+
+#sub-heading {
+  color: green;
+}
+
+/* element.style refers to inline style has a specificity of around 1000*/
