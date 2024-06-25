@@ -1,0 +1,32 @@
+.box {
+  background-color: crimson;
+  color: rgb(0, 0, 0);
+  /* width: 700px; */
+
+  /* covers only 700px but will shrink below 700px if screen shrinks */
+  /* max-width: 700px; */
+  /* height: 300px; */
+  /* max-height: 400px; */
+  /* min-height: 300px; */
+  width: 50%;
+
+  /* covers full width and shrinks till 700px below it overflow occurs */
+  /* min-width: 700px; */
+  /* overflow: hidden; */
+  /* word-break: break-all; */
+  padding: 20px;
+}
+
+.container {
+  background-color: salmon;
+  height: 400px;
+  width: 100%;
+}
+
+/* height mentioned in percentage will only work if its parent has an absolute height (px) */
+
+.inner-container {
+  max-width: 700px;
+  height: 50%;
+  background-color: wheat;
+}
