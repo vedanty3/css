@@ -1,20 +1,43 @@
+/* universal selector has specificity (0, 0, 0) which is much less*/
+* {
+  box-sizing: border-box; /* width will be fixed and padding, margin, border and content will be adjusted in the give width */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .box {
   background-color: crimson;
   color: rgb(0, 0, 0);
   /* width: 700px; */
 
   /* covers only 700px but will shrink below 700px if screen shrinks */
+  /* min-width: 700px; */
   /* max-width: 700px; */
   /* height: 300px; */
-  /* max-height: 400px; */
-  /* min-height: 300px; */
-  width: 50%;
-
+  /* max-height: 100px; */
+  /* min-height: 100px; */
+  /* width: 50%; */
+  width: 200px;
+  height: 200px;
+  /* padding: 20px; */
+  /* border: 2px solid rgb(132, 132, 134); */
+  margin: 40px;
+  border-radius: 50%;
+  overflow: hidden;
   /* covers full width and shrinks till 700px below it overflow occurs */
   /* min-width: 700px; */
   /* overflow: hidden; */
   /* word-break: break-all; */
-  padding: 20px;
+  /* padding: 20px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+  outline: 55px solid rgb(180, 180, 180); /* it is not included in width and height like border */
 }
 
 .container {
@@ -29,4 +52,14 @@
   max-width: 700px;
   height: 50%;
   background-color: wheat;
+}
+
+.box img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.box:hover {
+  transform: scale(1.1);
 }
