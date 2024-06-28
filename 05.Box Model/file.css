@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* behave like a box no matter if text ends earlier */
+/* block level element */
+p {
+  background-color: rgb(88, 255, 88);
+  width: 300px;
+  height: 100px;
+  padding: 25px;
+  border: 10px solid green;
+  margin: 25px;
+}
+
+/* takes that much only which is required  */
+/* inline element */
+/* padding, border and margin given to left and right will shift other elements away when needed but on top and bottom it goes over other elements whatever is their */
+.html {
+  /* applicable */
+  /* background-color: coral; */
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 25px;
+  outline: 10px solid hotpink;
+  /* display: block; */
+  /* border: 10px solid green; */
+
+  /* ---------------------------------------------------------------- */
+
+  /* not applicable */
+  /* height: 100px; */
+  /* width: 300px; */
+}
+
+/* 1rem == 16px */
+/* width and height doesn't work on inline elements */
+/* padding, border and margin works properly only for left and right sides and not for top and bottom */
+/* all properties work properly inline, not top and bottom */
+
+/* we can apply all properties of block elements but elements will be in different line */
+span.block {
+  border: 1px solid crimson;
+  width: 100px;
+  background-color: salmon;
+  margin: 10px;
+  padding: 10px;
+  height: 40px;
+  display: block;
+}
+
+/* we can apply all properties of block elements and elements will be in same line */
+/* inline elements: a, img, span, b */
+/* replaced inlined elements (width and height can be given): img */
+/* non-replaced inline elements (vice versa): a, b, span */
+span.__inline__block {
+  border: 1px solid crimson;
+  width: 100px;
+  background-color: salmon;
+  margin: 10px;
+  padding: 10px;
+  height: 40px;
+  display: inline-block;
+}
+
+div.block {
+  font-weight: 800;
+  font-size: 24px;
+}
+
+div.__inline__block {
+  font-weight: 800;
+  font-size: 24px;
+}
+
+/* though img is an inline element it works like inline-block, doesn't come over elements on top and below, it pushes them */
+img {
+  width: 200px;
+}
+
+/* display: inline; */
+/* iframe is a replaced inline element, means that height and width works with that  */
+iframe {
+  width: 380px;
+  display: block;
+  /* visibility: hidden; */
+  /* height: 280px; */
+}
+
+/* video is replaced inline element */
+video {
+}
