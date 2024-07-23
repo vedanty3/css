@@ -19,8 +19,8 @@ body {
   font-size: 1em;
   border: 1px solid green;
   /* width = 100 * computed font-size */
-  /* width: 100em; */
-  /* padding: 1em; */
+  width: 100em;
+  padding: 1em;
 }
 
 :root {
